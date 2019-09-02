@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormFileUpload"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_dua"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarTextView"
+            android:text="UPLOAD FILE"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. SPPD"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please take a picture from your camera or gallery"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_add_a_photo_green"
+                        android:text="Camera"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"
+                        android:id="@+id/btnCameraSppd"/>
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_photo_library_green"
+                        android:text="Gallery"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"
+                        android:id="@+id/btnGallerySppd"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_photo_grey_24dp"
+                        android:id="@+id/ivSppd"/>
+                </LinearLayout>
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Tiket"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please take a picture from your camera or gallery"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_add_a_photo_green"
+                        android:text="Camera"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"/>
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_photo_library_green"
+                        android:text="Gallery"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"
+                        android:id="@+id/btnGalleryTiket"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_photo_grey_24dp"
+                        android:id="@+id/ivTiket"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_photo_grey_24dp"/>
+                </LinearLayout>
+
+         </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Invoice"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please take a picture from your camera or gallery"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_add_a_photo_green"
+                        android:text="Camera"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"/>
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_photo_library_green"
+                        android:text="Gallery"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"
+                        android:id="@+id/btnGalleryInvoice"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_photo_grey_24dp"
+                        android:id="@+id/ivInvoice"/>
+                </LinearLayout>
+
+         </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Voucher"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please take a picture from your camera or gallery"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_add_a_photo_green"
+                        android:text="Camera"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"/>
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_photo_library_green"
+                        android:text="Gallery"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"
+                        android:id="@+id/btnGalleryVoucher"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_photo_grey_24dp"
+                        android:id="@+id/ivVoucher"/>
+                </LinearLayout>
+
+         </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. AML"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please take a picture from your camera or gallery"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_add_a_photo_green"
+                        android:text="Camera"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"/>
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shapeupload"
+                        android:shadowColor="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_photo_library_green"
+                        android:text="Gallery"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="12dp"
+                        android:textColor="#066e8a"
+                        android:id="@+id/btnGalleryAML"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_photo_grey_24dp"
+                        android:id="@+id/ivAML"/>
+
+                </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/submitfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="SUBMIT"
+                    android:textColor="#ffff"
+                    android:background="@drawable/selectorsubmit"/>
+         </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
